@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ridemetrics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Robert Landowski</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<a href="#menu" class="menuToggle"><span>Menu</span></a>
+								<div id="menu">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="ridemetrics.html">Ridemetrics</a></li>
+										<li><a href="robipedia.html">Robipedia</a></li>
+										<li><a href="robbit.html">Robbit</a></li>
+										<li><a href="robchat.html">Robchat</a></li>
+										<li><a href="blocjams.html">BlocJams</a></li>
+										<li><a href="prosports.html">Pro Sports Trivia</a></li>
+										<li><a href="worldrecord.html">World Record Facts</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+
+				<!-- Main -->
+					<article id="ridemetrics">
+						<header>
+
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+                <h2 class= "title-page">Ridemetrics</h2>
+                <div class="title-page"><img src="images/giphy.gif" alt="" /></div>
+                <hr />
+
+                <h3>Explanation</h3>
+								<p>Ridemetrics is a Rails application that uses both the Lyft API and the Uber API to give users an estimated price and wait time for each ride sharing service. I wanted to make an application that used two api's and I thought what better than ride sharing services. The project itself is purely used to showcase my abilities and will not be available for use. </p>
+
+								<hr />
+
+								<h3>Problem</h3>
+
+
+                <p>There were several challenges that I had to hurdle with this project. First was how was I going to intertwine two api's onto a web application. The second issue was how was I going to make it presentable to the user, since the lyft and uber api's use coordinates to pinpoint start and end locations. Finally, how was I going to present the data, I've never used graphs on a project before so I wasn't exactly sure how to implement this on a rails application.</p>
+                <div class="title-page"><img src="images/ridemetrics2.jpg" alt="" HEIGHT="420" WIDTH="750" /></div>
+                <hr />
+
+                <h3>Solution</h3>
+                <p>I had very few issues using the uber api since there was a gem that I utilized called 'uber-ruby'. This gem made it easy to use the api. However, I was unable to find a similar gem for the Lyft api, so I had to make all the connections manually, and although it was challenging, it was definitely a great learning experience.</p>
+                <p>The next issue was how was I going to present this to the user. At this point, on the start screen, a user can only retrieve a valid estimate if they type in their exact coordinates. The solution to this was using a third api, the Google Maps Geolocation API. I used a ruby gem called 'geo-coder' to easily use this api. This was great for me because now the user just had to type in their start and end location, and then those coordinates would be sent to the lyft and uber api's. Problem solved!</p>
+                <p>I wants graphs to present all the data to the user, but I wasn't sure how. The solution to this was d3.js. I had never used d3, and it was a little tricky to implement, but I was able to add a nice animation to my project when the data would load, so I really liked that and plan on using it in future projects.
+</p>
+                <hr />
+                <h3>Results</h3>
+                <p>I was extremely happy with the results. I was able to create an application that utilized three api's, which before this project I had only implemented one api max per application.
+                </p>
+
+                <hr />
+                <h3>Conclusion</h3>
+                <p>While ridemetrics had its fair share of challenges, ranging from intertwining the api's to presentability to the user, I found this project to be the most enjoyable that I made. I would spend hours trying to make the api's work together and for the longest time it would not work. However, when it did I was filled with a rush of happiness, excitement, and a feeling that I accomplished something that I hadn't been able to do prior. It took a lot of work, but at the end of the day, this is a project that I am proud of.</p>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/rlandows" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/robert-landowski/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="contact.html" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Robert Landowski</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

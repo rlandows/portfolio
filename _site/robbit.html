@@ -65,13 +65,13 @@
 
 								<h3>Problem</h3>
 
-								<p>There were several challenges that were new to me. The first of which was that this was the first time I used CRUD (Create Read Update Delete). This presented a challenge because I had to find ways to not only create data and insert it into the database, but delete data from the database, update the database, and display data from the database. That was definitely a challenge. Another issue was understanding user sessions and figuring out when a user is logged in or out. The difficulty of this is displaying different views when the user is signed in versus when they are not. This issue could be expanded to different access for different users (user, moderator, admin), where some users have more abilities than others.
+								<p>There were several challenges that were new to me. For starters, this was the first time I used CRUD (Create Read Update Delete). This presented a challenge because I had to find ways to not only create data and insert it into the database, but delete data from the database, update the database, and display data from the database. That was definitely a challenge. Another issue was understanding user sessions and figuring out when a user is logged in or out. The difficulty of this is displaying different views when the user is signed in versus when they are not. This issue could be expanded to different access for different users (user, moderator, admin), where some users have more abilities than others.
 
 </p>
                 <hr />
 
                 <h3>Solution</h3>
-                <p><b>CRUD:</b> With CRUD, I think the most important for me to understand was the correct routing. To Create, POST is the HTTP Verb used. Read uses the HTTP Verb GET, while if you want to Update data, you would use PUT or PATCH. Finally to delete you use the HTTP Verb Delete. It sounds easy now, but at the time it was a little bit of a headache. <br /> <b>Log in/out</b>: The solution to this was to use the HTTP cookies to track whether a user was logged in or not. This was difficult to place the session object in, but once I got it to work, the result was pretty cool! I did have to add a delete_session to end the session which makes sense to me now because how else would the application know if a user was logged in or not! <br /> <b>User/Moderator/Admin</b>: This was actually fairly simple. All I had to do is add some if/else statements to determine which type of user was logged in and that would either allow extra features or restrict them. </p>
+                <p><b>CRUD:</b> With CRUD, I think the most important concept to grasp was how to correctly route. To Create, POST is the HTTP Verb used. Read uses the HTTP Verb GET, while if you want to Update data, you would use PUT or PATCH. Finally to delete you use the HTTP Verb Delete. It sounds easy now, but at the time it was a little bit of a headache. <br /> <b>Log in/out</b>: The solution to this was to use the HTTP cookies to track whether a user was logged in or not. This was difficult to place the session object in, but once I got it to work, the result was pretty cool! I did have to add a delete_session to end the session which makes sense to me now because how else would the application know if a user was logged in or not! <br /> <b>User/Moderator/Admin</b>: This was actually fairly simple. All I had to do was add some if/else statements to determine which type of user was logged in and that would either allow extra features or restrict them. </p>
                 <hr />
                 <h3>Results</h3>
                 <p>The results were pretty cool, the website was fully functioning! Users could make posts, up-vote other users posts, comment on posts, favorite any post, and view public profiles. Happy with the end product!</p>
@@ -81,7 +81,7 @@
                 <hr />
                 <h3>Conclusion</h3>
                 <p>
-                  Although it was nothing close to the scale of Reddit, it was awesome to make a basic version of the website and see the list of things neededin order to make a site like this functioning! From now on, I will draw out a plan of each page of the site and its functionality so that I don’t get get off course from my original vision of what the site should be. Looking forward to developing my ruby skills and playing around with Rails!
+                  Although it was nothing close to the scale of Reddit, it was awesome to make a basic version of the website and see the list of things needed in order to make a site like this functioning! From now on, I will draw out a plan of each page of the site and its functionality so that I don’t get off course from my original vision of what the site should be. Looking forward to developing my ruby skills and playing around with Rails!
                 </p>
 
 							</div>

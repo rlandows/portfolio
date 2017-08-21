@@ -58,30 +58,28 @@
                 <hr />
 
                 <h3>Explanation</h3>
-								<p>Ridemetrics is a Rails application that uses both the Lyft API and the Uber API to give users an estimated price and wait time for each ride sharing service. I wanted to make an application that used two api's and I thought what better than ride sharing services. The project itself is purely used to showcase my abilities and will not be available for use. </p>
-
+								<p>Ridemetrics is a web application that compares the estimated prices and wait times of Uber and Lyft. It does this by accessing both their API’s. Once a user enters a start and end location, they are redirected to a page that compares the prices and wait times of both ride sharing services. Ridemetrics is written in Ruby and uses the Rails framework. The project itself is purely used to showcase my abilities and will not be available.</p>
 								<hr />
 
 								<h3>Problem</h3>
 
 
-                <p>There were several challenges that I had to hurdle with this project. First was how was I going to intertwine two api's onto a web application. The second issue was how was I going to make it presentable to the user, since the lyft and uber api's use coordinates to pinpoint start and end locations. Finally, how was I going to present the data, I've never used graphs on a project before so I wasn't exactly sure how to implement this on a rails application.</p>
+              <p>I encountered several challenges throughout this project. The first was learning how to seamlessly intertwine three different API’s in a web application. In my previous experience, I incorporated only one API in a web application. The second obstacle I faced was creating an aesthetically pleasing format that not only engaged the user, but also had a straight forward design. Lastly, I had never created visual aids for a web application before, and incorporation of visual aids in this application was vital to the structure and presentation. </p>
                 <div class="title-page"><img src="images/ridemetrics2.jpg" alt="" HEIGHT="420" WIDTH="750" /></div>
                 <hr />
 
                 <h3>Solution</h3>
-                <p>I had very few issues using the uber api since there was a gem that I utilized called 'uber-ruby'. This gem made it easy to use the api. However, I was unable to find a similar gem for the Lyft api, so I had to make all the connections manually, and although it was challenging, it was definitely a great learning experience.</p>
+                <p>I had very few issues using the Uber API because there was a gem that I utilized called 'uber-ruby'. This gem made it easy to use the API. I was unable to find a similar gem for the Lyft API so all the connections had to be made manually. It took quite some time to get a successful API request. My first issue was that I was using the incorrect Authorization Token. The second issue was the correct order of parameters. For instance, when requesting a ride the parameters are: lat, lng, destination_lat, destination_lng, and the ride_type. I got the order of parameters mixed up for lat and lng and this caused quite the headache because I was convinced I had it the right way. Although it was challenging and my simple errors caused a headache, it was definitely a great learning experience.</p>
                 <p>The next issue was how was I going to present this to the user. At this point, on the start screen, a user can only retrieve a valid estimate if they type in their exact coordinates. The solution to this was using a third api, the Google Maps Geolocation API. I used a ruby gem called 'geo-coder' to easily use this api. This was great for me because now the user just had to type in their start and end location, and then those coordinates would be sent to the lyft and uber api's. Problem solved!</p>
-                <p>I wants graphs to present all the data to the user, but I wasn't sure how. The solution to this was d3.js. I had never used d3, and it was a little tricky to implement, but I was able to add a nice animation to my project when the data would load, so I really liked that and plan on using it in future projects.
-</p>
+                <p>I wanted to implement graphs to present all the data to the user, but I wasn't sure how. The solution to this was d3.js, a Javascript library that allows users to visualize data. I had never used d3, and it wasn't too tricky to implement. Once I got the hang of it, I was able to add a nice animation to my project when the data would load, as seen above.</p>
                 <hr />
                 <h3>Results</h3>
-                <p>I was extremely happy with the results. I was able to create an application that utilized three api's, which before this project I had only implemented one api max per application.
+                <p>I was extremely happy with the results. I was able to create an application that utilized three API's. It was great to see my progression as a developer. Prior to this, I had only used a maximum of one API per project.
                 </p>
 
                 <hr />
                 <h3>Conclusion</h3>
-                <p>While ridemetrics had its fair share of challenges, ranging from intertwining the api's to presentability to the user, I found this project to be the most enjoyable that I made. I would spend hours trying to make the api's work together and for the longest time it would not work. However, when it did I was filled with a rush of happiness, excitement, and a feeling that I accomplished something that I hadn't been able to do prior. It took a lot of work, but at the end of the day, this is a project that I am proud of.</p>
+                <p> Ridemetrics had its fair share of challenges. This ranged from intertwining the API's to presenting the data to the user. However, I found this project to be the most enjoyable that I made. The project had its fair share of difficulties, but when I overcame those obstacles I was filled with a rush of happiness, excitement, and a feeling that I accomplished something that I hadn't been able to do prior. It took a lot of work, but at the end of the day, this is a project that I am proud of.</p>
 							</div>
 						</section>
 					</article>
